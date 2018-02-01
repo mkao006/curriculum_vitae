@@ -1,0 +1,135 @@
+{
+    "period": {
+        "title": "Ba/Bsc",
+        "time": ["2005-01-01", "2009-06-30"],
+        "type": "Education",
+        "icon": "",
+        "position": 1
+    },
+    "period": {
+        "title": "Bsc (1st Hons)",
+        "time": ["2009-06-30", "2010-06-30"],
+        "type": "Education",
+        "icon": "",
+        "position": 1
+    },
+    "period": {
+        "title": "Msc - Statistics",
+        "time": ["2010-06-30", "2012-06-30"],
+        "type": "Education",
+        "icon": "",
+        "position": 1
+    },
+    "period": {
+        "title": "Coursera",
+        "time": ["2010-09-30", "2014-12-12"],
+        "type": "Education",
+        "icon": "",
+        "position": 2
+    },
+    "period": {
+        "title": "Udacity",
+        "time": ["2017-05-30", "2018-01-30"],
+        "type": "Education",
+        "icon": "",
+        "position": 1        
+    },
+    "period": {
+        "title": "Ogilvy",
+        "time": ["2010-07-05", "2011-11-04"],
+        "type": "Employment",
+        "icon": "",
+        "position": 3
+    },
+    "period": {
+        "title": "UNFAO",
+        "time": ["2011-11-07", "2014-04-30"],
+        "type": "Employment",
+        "icon": "",
+        "position": 3       
+    },
+    "period": {
+        "title": "UNFAO (Remote)",
+        "time": ["2014-05-01", "2017-11-30"],
+        "type": "Employment",
+        "icon": "",
+        "position": 3
+    },
+    "period": {
+        "title": "Deepblu",
+        "time": ["2016-11-07", "2017-06-30"],
+        "type": "Employment",
+        "icon": "",
+        "position": 4
+    },
+    "period": {
+        "title": "Random Walker",
+        "time": ["2014-05-01", "2016-12-20"],
+        "type": "Personal",
+        "icon": "",
+        "position": 5
+    },    
+    "point": {
+        "title": "Senior Prize",
+        "time": ["2010-01-01"],
+        "type": "Education",
+        "icon": "",
+        "annotation_height": 3
+    },
+    "point": {
+        "title": "Senior Prize",
+        "time": ["2011-01-01"],
+        "type": "Education",
+        "icon": "",
+        "annotation_height": 2
+    },
+    "point": {
+        "title": "Master of Science Faculty Award",
+        "time": ["2011-06-30"],
+        "type": "Education",
+        "icon": "",
+        "annotation_height": 1
+    },
+    "point": {
+        "title": "RSVP and Nexus Award",
+        "time": ["2011-12-31"],
+        "type": "Employment",
+        "icon": "",
+        "annotation_height": 3
+    },
+    "point": {
+        "title": "Published first R package",
+        "time": ["2013-02-01"],
+        "type": "Employment",
+        "icon": "",
+        "annotation_height": 2
+    },
+    "point": {
+        "title": "Spread R across division",
+        "time": ["2013-12-01"],
+        "type": "Employment",
+        "icon": "",
+        "annotation_height": 1
+    },
+    "point": {
+        "title": "Took technical leadership",
+        "time": ["2014-06-30"],
+        "type": "Employment",
+        "icon": "",
+        "annotation_height": 3
+    },
+    "point": {
+        "title": "Self-taught Web dev and startup",
+        "time": ["2015-12-31"],
+        "type": "Personal",
+        "icon": "",
+        "annotation_height": 2
+    },
+    "point": {
+        "title": "ML/AI presentation to WTO",
+        "time": ["2017-11-14"],
+        "type": "Employment",
+        "icon": "",
+        "annotation_height": 1
+    }
+}
