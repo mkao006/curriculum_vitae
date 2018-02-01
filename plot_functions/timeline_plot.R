@@ -121,6 +121,6 @@ timelinePlot <- function(data, bar_width= 0.25){
     lapply(pointData, plotPointData, midpoint = ymidpoint)
 }
 
-file_path = "data/timeline.json"
-loaded_data = timelineDataParser("data/timeline.json")
+file_path = "../data/timeline.json"
+loaded_data = timelineDataParser(file_path)
 timelinePlot(loaded_data, bar_width= 0.1)
