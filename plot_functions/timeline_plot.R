@@ -118,9 +118,12 @@ timelinePlot <- function(data, bar_width= 0.25){
         plotPeriodData(block, barwidth = bar_width,
                        baroffset = ymidpoint, col = current_col)
     }    
-    lapply(pointData, plotPointData, midpoint = ymidpoint)
+    ## lapply(pointData, plotPointData, midpoint = ymidpoint)
+    for(block in pointData){
+        plotPointData(block, midpoint = ymidpoint)
+    }
 }
 
-file_path = "../data/timeline.json"
-loaded_data = timelineDataParser(file_path)
-timelinePlot(loaded_data, bar_width= 0.1)
+## file_path = "../data/timeline.json"
+## loaded_data = timelineDataParser(file_path)
+## timelinePlot(loaded_data, bar_width= 0.1)
