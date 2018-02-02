@@ -36,7 +36,7 @@ associationPlot <- function(data){
     continuous_colors = scales::gradient_n_pal(discrete_colors)(normalised_skills_hour)
 
     par(mfrow = c(1, 2), oma = rep(0, 4))
-
+    par(mar = c(5.1, 4.1, 4.1, 0))
     ## Job Description
     plot.new()
     plot.window(xlim = c(0.5, 5.5),
@@ -55,6 +55,7 @@ associationPlot <- function(data){
 
 
     ## Job Association matrix
+    par(mar = c(5.1, 0, 4.1, 2.1))
     with(data, symbols(skills_name,
                        company,
                        circles = skills_hour,
@@ -73,6 +74,6 @@ associationPlot <- function(data){
     
 }
 
-file_path = "../data/association.json"
-loaded_data = associationDataParser(file_path)
-associationPlot(loaded_data)
+## file_path = "../data/association.json"
+## loaded_data = associationDataParser(file_path)
+## associationPlot(loaded_data)
