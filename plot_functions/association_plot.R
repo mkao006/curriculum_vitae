@@ -47,7 +47,13 @@ associationPlot <- function(data){
     axis(1)
     axis(2)
 
-    title_margin = 0.1
+    company_margin = 0.1
+    unique_companys = rev(levels(data$company))
+    for(i in 1:length(unique_companys)){
+        text(0.8, num_jobs + 1.5 - i - company_margin, labels = unique_companys[i], adj = c(0, 1))
+    }
+
+    title_margin = 0.2
     unique_titles = rev(levels(data$title))
     for(i in 1:length(unique_titles)){
         text(0.8, num_jobs + 1.5 - i - title_margin, labels = unique_titles[i], adj = c(0, 1))
