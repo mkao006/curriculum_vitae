@@ -1,0 +1,67 @@
+---
+title: "Curriculum Vitae"
+author: Michael C. J. Kao
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output: pdf_document
+---
+
+```{r, echo = FALSE, hide = TRUE}
+knitr::opts_chunk$set(echo = FALSE, hide = TRUE, message = FALSE, warning = FALSE)
+```
+
+
+## Personal Info
+Email: mkao006@gmail.com
+
+LinkedIn: https://www.linkedin.com/in/mkao006
+
+Github: https://github.com/mkao006
+
+Nationality: New Zealand/Taiwan
+
+## Summary
+
+This report analysis the suitability of the said individual.
+
+
+
+
+
+
+```{r, load_libraries}
+source("plot_functions/association_plot.R")
+source("plot_functions/timeline_plot.R")
+timeline_file_path = "data/timeline.json"
+association_file_path = "data/association.json"
+```
+## Timeline
+
+```{r, timelie_plot, fig.width=18, fig.height=12}
+
+loaded_timeline_data = timelineDataParser(timeline_file_path)
+timelinePlot(loaded_timeline_data, bar_width= 0.1)
+
+```
+
+It can be seen from the above graph, the individual is highly
+motivated, simultneously tackling multiple tasks and constantly
+learning.
+
+## Experience
+
+```{r, association_plot, fig.width=18, fig.height=9}
+
+loaded_association_data = associationDataParser(association_file_path)
+associationPlot(loaded_association_data)
+
+```
+
+From the association matrix, the individual has extensive experience
+in modelling and algorithm development. He also has a descent exposure
+in ETL and strategy development. Although the individual is not highly
+experienced in leadership, he is poised to increase his exposure and
+is not afraid of taking on additional responsibilities.
+
+## Technical Skills
+
+## Conclusion
