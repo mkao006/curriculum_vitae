@@ -2,13 +2,24 @@
 title: "Curriculum Vitae"
 author: Michael C. J. Kao
 date: "`r format(Sys.time(), '%Y-%m-%d')`"
-output: pdf_document
+output:
+    html_document:
+        css: style.css
+        
 ---
 
 ```{r, echo = FALSE, hide = TRUE}
 knitr::opts_chunk$set(echo = FALSE, hide = TRUE, message = FALSE, warning = FALSE)
 ```
 
+```{r, load_libraries}
+source("plot_functions/association_plot.R")
+source("plot_functions/timeline_plot.R")
+source("plot_functions/radar_plot.R")
+timeline_file_path = "data/timeline.json"
+association_file_path = "data/association.json"
+radar_file_path = "data/radar.json"
+```
 
 ## Personal Info
 Email: mkao006@gmail.com
@@ -19,21 +30,39 @@ Github: https://github.com/mkao006
 
 Nationality: New Zealand/Taiwan
 
-## Summary
-
-This report analysis the suitability of the said individual.
-
-
-
-
-
-
-```{r, load_libraries}
-source("plot_functions/association_plot.R")
-source("plot_functions/timeline_plot.R")
-timeline_file_path = "data/timeline.json"
-association_file_path = "data/association.json"
+```{r, skills_radar}
+radar_data = read_json(radar_file_path)
+jpeg(file = "radar_plot.jpg")
+radar_plot(radar_data)
+graphics.off()
 ```
+
+
+
+## Bio
+
+<div class="radar">
+<div class="radar text">
+
+Highly motivated and energetic data scientist, having seven years of experience interpreting and analysing data to drive business solutions.
+
+Thorough knowledge of statistics, mathematics, and algorithms, and also proficient in programming languages and diverse databases.
+
+Strong learning aptitude, ability to adhere to a high level of service ethics, and a quick grasp of client requirements.
+
+Possess relevant academic training, technical knowledge, professional experience, and a passion for continuous development in a data scientist role.
+
+
+</div>
+
+<img src="radar_plot.jpg" class="radar img">
+
+</div>
+</div>
+
+
+
+
 ## Timeline
 
 ```{r, timelie_plot, fig.width=18, fig.height=12}
