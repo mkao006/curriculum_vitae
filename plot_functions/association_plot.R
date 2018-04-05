@@ -1,5 +1,7 @@
 library(jsonlite)
 library(RColorBrewer)
+library(jpeg)
+library(png)
 
 parseJob <- function(x, name){
     avg_time = x$avg_time
@@ -20,7 +22,9 @@ associationDataParser <- function(path){
     rownames(parsed_dataframe) = NULL
     parsed_dataframe$company = factor(parsed_dataframe$company)
     parsed_dataframe$title = factor(parsed_dataframe$title)
-    parsed_dataframe$skills_name = factor(parsed_dataframe$skills_name)
+    parsed_dataframe$skills_name = factor(parsed_dataframe$skills_name,
+                                          levels = c("Data Processing", "Analytics", "Research",
+                                              "Management"))
     
     parsed_dataframe    
 }
@@ -35,30 +39,25 @@ associationPlot <- function(data){
     discrete_colors = brewer.pal(n = 9, name="Blues")[c(1, 3, 5, 7, 9)]
     continuous_colors = scales::gradient_n_pal(discrete_colors)(normalised_skills_hour)
 
-    par(mfrow = c(1, 2), oma = rep(0, 4))
-    par(mar = c(5.1, 4.1, 4.1, 0))
-    ## Job Description
+    ## Layout
+    layout(matrix(c(1, 2, 3, rep(4, 9)), nc = 4))
+    par(mar = rep(0, 4))
+
+    ## Company icon
     plot.new()
-    plot.window(xlim = c(0.5, 5.5),
-                ylim = c(0.5, 4.5),
-                xaxs = "i", yaxs = "i")
-    abline(h = c(1.5, 2.5, 3.5))
-    box()
-    axis(1)
-    axis(2)
+    plot.window(xlim = c(0, 10),
+                ylim = c(0, 10))
+    rasterImage(readJPEG("../deepblu.jpg"), 1.5, 2, 7.5, 8)
 
-    company_margin = 0.1
-    unique_companys = rev(levels(data$company))
-    for(i in 1:length(unique_companys)){
-        text(0.8, num_jobs + 1.5 - i - company_margin, labels = unique_companys[i], adj = c(0, 1))
-    }
+    plot.new()
+    plot.window(xlim = c(0, 10),
+                ylim = c(0, 10))
+    rasterImage(readPNG("../fao.png"), 2.5, 3, 7.5, 8)
 
-    title_margin = 0.2
-    unique_titles = rev(levels(data$title))
-    for(i in 1:length(unique_titles)){
-        text(0.8, num_jobs + 1.5 - i - title_margin, labels = unique_titles[i], adj = c(0, 1))
-    }
-
+    plot.new()
+    plot.window(xlim = c(0, 10),
+                ylim = c(0, 10))
+    rasterImage(readJPEG("../ogilvy.jpg"), 2.5, 2.5, 7.5, 7.5)
 
     ## Job Association matrix
     par(mar = c(5.1, 0, 4.1, 2.1))
@@ -72,14 +71,13 @@ associationPlot <- function(data){
                        ylab = "",
                        axes = FALSE
                        ))
-    axis(3, labels = levels(data$skills_name), at = as.numeric(unique(data$skills_name)), col = NA)
-    ## box(col='white')
-    ## box()
-    ## axis(1)
-    ## axis(2)    
-    
+    axis(3, labels = levels(data$skills_name), at = as.numeric(unique(data$skills_name)), col = NA,
+         cex.axis = 2)
 }
 
+
+## jpeg(file = "../experience_association.jpeg", width = 660 , height = 600, quality = 100)
 ## file_path = "../data/association.json"
 ## loaded_data = associationDataParser(file_path)
 ## associationPlot(loaded_data)
+## graphics.off()
