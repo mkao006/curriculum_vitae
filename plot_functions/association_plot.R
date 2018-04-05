@@ -47,17 +47,17 @@ associationPlot <- function(data){
     plot.new()
     plot.window(xlim = c(0, 10),
                 ylim = c(0, 10))
-    rasterImage(readJPEG("../deepblu.jpg"), 1.5, 2, 7.5, 8)
+    rasterImage(readJPEG("../company_icon/deepblu.jpg"), 1.5, 2, 7.5, 8)
 
     plot.new()
     plot.window(xlim = c(0, 10),
                 ylim = c(0, 10))
-    rasterImage(readPNG("../fao.png"), 2.5, 3, 7.5, 8)
+    rasterImage(readPNG("../company_icon/fao.png"), 2.5, 3, 7.5, 8)
 
     plot.new()
     plot.window(xlim = c(0, 10),
                 ylim = c(0, 10))
-    rasterImage(readJPEG("../ogilvy.jpg"), 2.5, 2.5, 7.5, 7.5)
+    rasterImage(readJPEG("../company_icon/ogilvy.jpg"), 2.5, 2.5, 7.5, 7.5)
 
     ## Job Association matrix
     par(mar = c(5.1, 0, 4.1, 2.1))
@@ -76,7 +76,7 @@ associationPlot <- function(data){
 }
 
 
-## jpeg(file = "../experience_association.jpeg", width = 660 , height = 600, quality = 100)
+## jpeg(file = "../old_cv/experience_association.jpeg", width = 660 , height = 600, quality = 100)
 ## file_path = "../data/association.json"
 ## loaded_data = associationDataParser(file_path)
 ## associationPlot(loaded_data)
