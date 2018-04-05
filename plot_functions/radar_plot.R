@@ -1,10 +1,6 @@
 library(jsonlite)
 library(RColorBrewer)
 
-
-file_path = "../data/radar.json"
-loaded_data = read_json(file_path)
-
 polar2cartesian <- function(r, theta){
     x = r * cos(theta)
     y = r * sin(theta)
@@ -24,17 +20,20 @@ draw_polygon <- function(slice, n_slice, levels, n_levels, skill){
         
 }
 
-radar_plot <- function(){
+radar_plot <- function(data){
+    n_skills = length(data)
+    skills_name = names(data)
+
+    ## Plot the polygon
+    par(mar = rep(0, 4))
+    plot.new()
+    plot.window(xlim = c(-1.5, 1.5), ylim = c(-1.5, 1.5))
+    for(i in 1:n_skills){
+        draw_polygon(slice = i, n_slice = n_skills,
+                     levels = data[[i]],
+                     n_levels = max(unlist(data)),
+                     skill = skills_name[[i]])
+    }
 }
 
 
-n_skills = length(loaded_data)
-skills_name = names(loaded_data)
-
-
-
-plot.new()
-plot.window(xlim = c(-1.5, 1.5), ylim = c(-1.5, 1.5))
-for(i in 1:6){
-    draw_polygon(i, 6, sample(5, 1), 5, 'Test')
-}
