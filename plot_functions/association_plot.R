@@ -82,7 +82,6 @@ associationPlot <- function(data){
 
 jpeg(file = "../cv_latex/experience_association.jpeg", width = 660 , height = 600, quality = 100,
      family = "LM Roman 10")
-
 file_path = "../data/association.json"
 loaded_data = associationDataParser(file_path)
 associationPlot(loaded_data)
