@@ -2,27 +2,27 @@
     "Ogilvy": {
         "title": "Data Analyst",
         "skills": {
-            "Data Processing": 20,
+            "ETL": 20,
             "Analytics": 50,
             "Research": 30,
-            "Management": 0
+            "Mgmt": 0
         },
         "avg_time": 80
     },
     "UNFAO": {
         "title": "Lead Statistician",
         "skills": {
-            "Data Processing": 0,
+            "ETL": 0,
             "Analytics": 0,
             "Research": 80,
-            "Management": 20
+            "Mgmt": 20
         },
         "avg_time": 60
     },
     // "Random Walker": {
     //     "title": "Founder",
     //     "skills": {
-    //         "ETL/Data Processing": 30,
+    //         "ETL/ETL": 30,
     //         "Insight/Strategy": 0,
     //         "Model/Algorithm": 30,
     //         "Managment": 0,
@@ -33,10 +33,10 @@
     "Deepblu": {
         "title": "Senior Data Scientist",
         "skills": {
-            "Data Processing": 30,
+            "ETL": 30,
             "Analytics": 40,
             "Research": 30,
-            "Management": 10
+            "Mgmt": 10
         },
         "avg_time": 80
     }    
