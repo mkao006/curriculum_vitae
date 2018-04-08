@@ -117,23 +117,16 @@
     \needspace{0.5\textheight}%
     \newdimen\boxwidth%
     \boxwidth=\dimexpr\linewidth-2\fboxsep\relax%
-    \colorbox[HTML]{F5DD9D}{%
-    \begin{tabularx}{\boxwidth}{c|X}
-      %% \SYMBOL{45} & {#2}\smallskip\\
-      \faGithub & \href{http://#1}{#1}\smallskip\\
-      \faFlag &  {#2}\smallskip\\
-      \SYMBOL{37} & {#3}\smallskip\\
-      \SYMBOL{41} & \href{mailto:#4}{#4}\smallskip\\
-      \faSkype & {#5}
+    \colorbox[HTML]{ffffff}{%
+      \begin{tabularx}{\boxwidth}{c|X}
+        \centering
+        %% \SYMBOL{45} & {#2}\smallskip\\
+        \faGithub & \href{http://#1}{#1}\smallskip\\
+        \faFlag &  {#2}\smallskip\\
+        \SYMBOL{37} & {#3}\smallskip\\
+        \SYMBOL{41} & \href{mailto:#4}{#4}\smallskip\\
+        \faSkype & {#5}
     \end{tabularx}}}
-    %% \begin{tabularx}{\boxwidth}{c|X}
-    %%   %% \SYMBOL{45} & {#2}\smallskip\\
-    %%   \faGithub & \href{http://#1}{#1}\smallskip\\
-    %%   \faFlag &  {#2}\smallskip\\
-    %%   \SYMBOL{37} & {#3}\smallskip\\
-    %%   \SYMBOL{41} & \href{mailto:#4}{#4}\smallskip\\
-    %%   \faSkype & {#5}
-    %% \end{tabularx}}
 
 % Every \item can be followed by one or more paragraphs
 % of description:
