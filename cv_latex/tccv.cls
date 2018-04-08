@@ -123,8 +123,8 @@
         %% \SYMBOL{45} & {#2}\smallskip\\
         \faGithub & \href{http://#1}{#1}\smallskip\\
         \faFlag &  {#2}\smallskip\\
-        \SYMBOL{37} & {#3}\smallskip\\
-        \SYMBOL{41} & \href{mailto:#4}{#4}\smallskip\\
+        \faPhone & {#3}\smallskip\\
+        \faEnvelope & \href{mailto:#4}{#4}\smallskip\\
         \faSkype & {#5}
     \end{tabularx}}}
 
