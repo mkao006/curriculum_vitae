@@ -25,7 +25,7 @@ associationDataParser <- function(path){
     parsed_dataframe$company = factor(parsed_dataframe$company)
     parsed_dataframe$title = factor(parsed_dataframe$title)
     parsed_dataframe$skills_name = factor(parsed_dataframe$skills_name,
-                                          levels = c("ETL", "Analytics", "Research",
+                                          levels = c("ETL", "Analytics", "Modelling",
                                               "Mgmt"))
     
     parsed_dataframe    

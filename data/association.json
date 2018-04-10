@@ -4,7 +4,7 @@
         "skills": {
             "ETL": 20,
             "Analytics": 50,
-            "Research": 30,
+            "Modelling": 30,
             "Mgmt": 0
         },
         "avg_time": 80
@@ -14,7 +14,7 @@
         "skills": {
             "ETL": 0,
             "Analytics": 0,
-            "Research": 80,
+            "Modelling": 80,
             "Mgmt": 20
         },
         "avg_time": 60
@@ -35,7 +35,7 @@
         "skills": {
             "ETL": 30,
             "Analytics": 40,
-            "Research": 30,
+            "Modelling": 30,
             "Mgmt": 10
         },
         "avg_time": 80
