@@ -1,0 +1,92 @@
+---
+title: "Simplicity Is The Ultimate Sophistication"
+output: pdf_document        
+---
+
+
+Over the years, I have develoepd a set of philosphy which guides my
+decision making at work. This philosphy can be expressed as follow:
+
+# $$\min_{\beta \in \mathbb{R}^{d}}\left\{\left\|y - \mathbb{X}\beta \right\|_{2}+ \lambda \|\beta \|_{1}\right\}$$
+
+For those coming from a quantitative background, you would recognise
+that this is the LASSO equation or regularised linear regression. This
+simple equation has influenced me in many aspects and I would like to
+provide a simple explanation of its power.
+
+
+This expression is a reflection of personal preferences based on my
+experience. It should not be seen as irrefutable or universal.
+
+
+## Breaking Down The Equation
+
+First of all, let's provide the equation with some context and
+decompose it into meaningful pieces.
+
+Let us begin by reassign meaning to the abstract symbols in the
+equation above,
+
+$$y = \text{goal}$$
+$$\mathbb{X} = \text{action}$$
+$$\beta = \text{resources}$$
+$$\lambda = \text{restriction factor}$$
+
+and also let us define \textbf{result} as the amount of
+\textbf{resources} allocated to each of the possible \textbf{actions},
+
+$$\mathbb{X}\beta = \text{result}$$
+
+We can then re-write the equation in a more interpretable form:
+
+$$\min_{\text{resources} \in \mathbb{R}^{d}}\left\{\left\|\text{goal} - \text{result} \right\|_{2}+ \text{restriction factor} \times \|\text{resources} \|_{1}\right\}$$
+
+
+In brevity, the equation can be broken down into two components.
+
+1. $\left\|\text{goal} - \text{result} \right\|_{2}$
+2. $\text{restriction factor} \times \|\text{resources} \|_{1}$
+
+
+The first component indicates our desire to minimise the difference
+between the outcome of our work and the end goal. On the other hand,
+the second part reflects the amount of resources we can allocate to
+this particular goal as we have competing goals and limited resources
+in life.
+
+The \textbf{restriction factor} captures the importance of the
+task. If the goal is life-threatening, then we would not impose any
+restriction on the amount of effort (The restriction factor would thus
+be zero and simplifies the equation to just the first
+component). However, if the task is trivial, then we would impose a
+high \textbf{restriction factor} to limit the amount of resources
+devoted to the job.
+
+## How this affect the way I work
+
+### Focus On the Necessary
+
+In one of the previous project I lead, we were involved with several
+teams of varying expertise and background. This diversity has lead to
+a plethora of requests which were impossible to address. With the
+principle in mind, we were able to isolate the necesary tasks to
+ensure the success of the project.
+
+### Project Management and Prioritisation
+
+We are constantly faced with never-ending challenges with limited
+resources. The principle naturally incorporates this reality and
+continually reminds me the importance of task prioritisation, and
+investment of resources should be carefully weighed against the
+benefits.
+
+
+### KISS - Keep It Simple Keep It Stupid
+
+The equation can also be seen as a manifestation of the Occam's Razor.
+
+As a data scientist, I am naturally excited about new technology and
+sophisticated models. Nonetheless, the amount of work and
+vulnerability usually grows exponentially with increased
+complexity. As a result, when facing model with similar performances,
+my preference always lies with the simpler model.
