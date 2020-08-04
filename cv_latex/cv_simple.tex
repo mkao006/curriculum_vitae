@@ -11,6 +11,7 @@
 \usepackage{graphicx}
 \usepackage{placeins}
 \usepackage{amsmath}
+\usepackage{amsfonts}
 
 \begin{document}
 
@@ -24,10 +25,7 @@
 \vspace{0.5cm}
 \personal
     [github.com/mkao006]
-    {New Zealand/Taiwan}
-    {+(886) 917 262 817}
     {mkao006@gmail.com}
-    {mkao006}
 
 \section{Personal Summary}
 
@@ -35,77 +33,11 @@ Highly skilled data scientist with hands-on knowledge of the latest
 statistic and machine learning techniques with a problem-solving
 mindset at the core.\\
 
-Proficient in R and Python for analysis and data preparation. Seasoned
-in working with standard database and adept at scrapping unstructured
-data from the web.\\
-
-Strong business acumen and proven records of using analytics to
-enhance business performance. \\
+Real experience in productionising machine learning model on AWS and
+solid understanding of engineering practice.\\
 
 I love diving, in water and in data!
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Software skills
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Software Skills}
-\begin{factlist}
-\item{Languages}
-  {R, Python and shell}
-\item{Packages} {mlr, shiny, pandas, numpy, scipy, sciki-learn,
-  scrapy, tensorflow, airflow and django}
-\item{Database}
-  {SQL, PostGIS, Mongo}
-\item{Other}
-     {Linux, Docker and Git}
-\end{factlist}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Education
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%% \vspace{5in}
-\section{Education}
-
-\begin{yearlist}
-
-%% \item[Udacity]{2017 -- 2018}
-%%   {Artificial Intelligence Nano Degree}{}
-
-%% \item[Coursera.org]{2011 -- Present}
-%%      {Various Courses}{}
-
-  
-\item[University of Auckland]{2010 -- 2012}
-     {M.Sc. in Statistic}
-     %% {SNM-GARCH: A semi-parametric mixture extension to GARCH modelling}
-{}
-
-\item[University of Auckland]{2009 -- 2010}
-     {B.A. (1st Class Hons.) \newline in Statistics}
-     %% {Complex Demodulation/Remodulation of Electricity Consumption Time Series.}
-{}
-
-\item[University of Auckland]{2005 -- 2009}
-  {B.A. \& B.Sc}
-  {}
-  %% {Majored in Economics, \newline Finance and Statistics}
-
-%% \item[Coursera.org]{On-Going}
-%%      {Online Course (MOOC)}
-%%      {Machine Learning \newline Networked Life \newline Data Science}
-
-%% \item[PADI \& TDI]{On-going}
-%%   {Dive Master \newline Full Cave Diver \newline Extended Range}
-%%      {}
-
-
-%% \item[MOOC]{On-going}
-%%   {Various Courses}
-  %%   {}
-
-\end{yearlist}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Work experience and skills
@@ -115,22 +47,36 @@ I love diving, in water and in data!
 
 \begin{eventlist}
 
+\item{July 2018 -- }
+  {\href{https://envato.com/}{Envato}, Melbourne, Australia}
+  {Data Scientist}
+
+  Spearheaded the formation of the data science function and promote
+  the application of machine learning across the company with high
+  value use cases.
+
+\item{July2017 -- July 2018}
+  {\href{http://www.fao.org/home/en/}{FAO of the United Nations}, Remote}
+  {Consultant}
+
+  Research on the application of Deep Learning models for detecting
+  commodity market anormalies and potential food crisis.
+  
 \item{November 2016 -- July 2017}
-  {Deepblu Inc, Taiwan}
+  {\href{http://deepblu.com/}{Deepblu Inc}, Taipei, Taiwan}
   {Senior Data Scientist}
 
-  Head of newly created data team, lead the charge on building the
-  data culture.
-
+  Lead of newly created data team reporting to senior management on
+  everything about data.
 
 \item{October 2011 -- October 2016}
-  {FAO of the United Nations, Italy}
+  {\href{http://www.fao.org/home/en/}{FAO of the United Nations}, Rome, Italy}
   {Lead Statistician}
 
-  R ambassador and project technical lead.\\
+  R ambassador and project technical lead for the global Food Balance Sheet.\\
   
 \item{June 2010 -- November 2011}
-  {Ogilvy \& Mather, New Zealand}
+  {Ogilvy \& Mather, Auckland, New Zealand}
   {Data Analyst}
   
   Analytical consultant delivering solutions to business
@@ -139,10 +85,27 @@ I love diving, in water and in data!
 
 \end{eventlist}
 
-\begin{figure}[h!] % use [hb] only if necceccary!
-  \centering
-  \includegraphics[width=9cm,height=7.5cm]{experience_association.jpeg}
-\end{figure}
+%% \begin{figure}[h!] % use [hb] only if necceccary!
+%%   \centering
+%%   \includegraphics[width=9cm,height=7.5cm]{experience_association.jpeg}
+%% \end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% software skills
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Software Skills}
+\begin{factlist}
+\item{Languages}
+  {R, Python}
+\item{Packages} {mlr, shiny, pandas, numpy, scipy, sciki-learn,
+  scrapy, tensorflow, airflow and django}
+\item{Database}
+  {SQL, PostGIS, Mongo}
+\item{Other}
+     {Linux, Docker, AWS and Git}
+\end{factlist}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -155,13 +118,17 @@ I love diving, in water and in data!
 ``Simplicity Is The Ultimate Sophistication``
 %% \end{shadequote}
 
-\vspace{0.5cm}
+\vspace{0.1cm}
 
 \begin{equation*}
-  \min_{\beta \in \mathbb{R}^{d}}\left\{\left\|y - \mathbb{X}\beta \right\|_{2}+ \lambda \|\beta \|_{1}\right\}\\
+  \min_{\beta \in \mathbb{R}^{d}}\left\{\|y - \mathbb{X}\beta \|_{2} + \lambda \|\beta \|_{1}\right\}\\
 \end{equation*}
 
-\vspace{0.5cm}
+%% \begin{equation*}
+%% {L(D)} = \min_{H \in {\cal H}} \ (\ L(H) + L(D|H) \ )
+%% \end{equation*}
+
+\vspace{0.1cm}
 
 %% Where $R$ denotes the desired results and $P$ the problems at hand,
 %% the coefficient $\beta$ represents the amount of effort dedicated to
@@ -169,10 +136,6 @@ I love diving, in water and in data!
 
 %% In essense, never loose track of the ultimate goal, but allocate the
 %% resources efficiently to achieve the best outcome.
-
-
-\vspace{5cm}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Award and scholarships
@@ -202,8 +165,8 @@ I love diving, in water and in data!
 
 \begin{yearlist}
 \item{2018} {Diamond Analysis} {Scrapped diamond data from James Allen
-  to analyse and identify the best diamond to purchase for the
-  engagement ring.}
+  to analyse and built pricing model to understand how much I have
+  been ripped off on the engagement ring.}
 
 %% \item{2016} {DataKind Datadive Hackathon} {Prototyped a web app in
 %%   Shiny to provide information on the animal density and observation
@@ -211,19 +174,41 @@ I love diving, in water and in data!
   
 \end{yearlist}
 
+
+\begin{figure}[h!] % use [hb] only if necceccary!
+  \centering
+  \includegraphics[width=1cm,height=1cm]{../company_icon/envato.png}
+\end{figure}
+
+\begin{yearlist}
+
+\item{2020} {Churn reduction} {Analyse data to identify point of churn
+  and built prediction model to reduce churn (On-going).}
+  
+\item{2019} {Customer Segmentation} { Segment customers into multiple
+  industry, providing a basis for \textbf{company communication and
+  personalised strategy.}}
+
+\item{2019} {Customer Lifetime Value} { Predict customer lifetime
+  value using survival analysis and \textbf{ensure PPC campaigns
+    provide an acceptable level of ROI}}
+
+\end{yearlist}
+
+
 \begin{figure}[h!] % use [hb] only if necceccary!
   \centering
   \includegraphics[width=1cm,height=1cm]{../company_icon/deepblu.jpg}
 \end{figure}
 
 \begin{yearlist}
-  \item{2017} {Data Pipeline Automation} {Employed Airflow to automate
-    and streamline the process of building the data lake.}
+  %% \item{2017} {Data Pipeline Automation} {Employed Airflow to automate
+  %%   and streamline the process of building the data lake.}
 
-  \item{2017} {Identify Anomalies} {Implemented the isolation forest
-    to detect anomalies in dive logs such as dive computer failure to
-    \textbf{improve the reliability of our product and the safety of
-      diving}.}
+  \item{2017} {Identify Anomalies} {Applied isolation forest to detect
+    anomalies in dive logs resulting from hardware faulty in dive
+    computer to \textbf{improve the reliability of our product and the
+      safety of diving}.}
 
   \item{2017} {Path to Exponential Growth}{Anlaysed the structure and
     connectivity of the market and devised \textbf{acquisition
@@ -281,7 +266,6 @@ I love diving, in water and in data!
   
 \end{yearlist}
 
-\vspace{2cm}
 
 \begin{figure}[h!] % use [hb] only if necceccary!
   \centering
@@ -290,13 +274,13 @@ I love diving, in water and in data!
 
 \begin{yearlist}
 
-\item{2011} {What Teacher Shortage?
-  (\href{http://nzdmawards.co.nz/winners-archive/2011-winners-gallery/ministry-of-education-what-teacher-shortage}{RSVP
-    Award})} {Forecasted demand and supply of teachers and analysed
-  the labour force to provide insights on the reality of the teaching
-  force. The RSVP and Nexus prize was awarded for \textbf{confirming
-    that the teacher shortage was truly over and assisted in new
-    policy formulation}.}
+%% \item{2011} {What Teacher Shortage?
+%%   (\href{http://nzdmawards.co.nz/winners-archive/2011-winners-gallery/ministry-of-education-what-teacher-shortage}{RSVP
+%%     Award})} {Forecasted demand and supply of teachers and analysed
+%%   the labour force to provide insights on the reality of the teaching
+%%   force. The RSVP and Nexus prize was awarded for \textbf{confirming
+%%     that the teacher shortage was truly over and assisted in new
+%%     policy formulation}.}
 
   
 \item{2011} {Marketing Optimisation Analysis} {The project estimated the effects of
@@ -306,7 +290,9 @@ I love diving, in water and in data!
   banking client. The result was a \textbf{79\% improvement in
     customer acquisition over the existing budget}.}
 
+\end{yearlist}
 
+\begin{yearlist}
 \item{2011}
      {Finding High Achievers}
      {The project identified segments of individuals which are high
@@ -325,7 +311,8 @@ I love diving, in water and in data!
 \section{Interests}
 
 \begin{factlist}
-\item{Hobbies} {Scuba diving, basketball, boxing and travelling}
+\item{Hobbies} {Scuba diving, basketball, boxing, cooking and
+  travelling}
 \end{factlist}
 
 \FloatBarrier
@@ -334,6 +321,31 @@ I love diving, in water and in data!
   \textit{Places I have visited}
 \FloatBarrier
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% \vspace{5in}
+\section{Education}
+
+\begin{yearlist}
+  
+\item[University of Auckland]{2010 -- 2012}
+     {M.Sc. in Statistic}
+     %% {SNM-GARCH: A semi-parametric mixture extension to GARCH modelling}
+{}
+
+\item[University of Auckland]{2009 -- 2010}
+     {B.A. (1st Class Hons.) \newline in Statistics}
+     %% {Complex Demodulation/Remodulation of Electricity Consumption Time Series.}
+{}
+
+\item[University of Auckland]{2005 -- 2009}
+  {B.A. \& B.Sc}
+  {}
+  %% {Majored in Economics, \newline Finance and Statistics}
+
+\end{yearlist}
 
 
 \end{document}
