@@ -112,7 +112,7 @@
 %         {address}
 %         {phone number}
 %         {email}
-\newcommand\personal[5][]{%
+\newcommand\personal[2][]{%
     \newcommand\SYMBOL[1]{\raisebox{-2pt}{\Large\ding{##1}}}%
     \needspace{0.5\textheight}%
     \newdimen\boxwidth%
@@ -122,10 +122,7 @@
         \centering
         %% \SYMBOL{45} & {#2}\smallskip\\
         \faGithub & \href{http://#1}{#1}\smallskip\\
-        \faFlag &  {#2}\smallskip\\
-        \faPhone & {#3}\smallskip\\
-        \faEnvelope & \href{mailto:#4}{#4}\smallskip\\
-        \faSkype & {#5}
+        \faEnvelope & \href{mailto:#2}{#2}
     \end{tabularx}}}
 
 % Every \item can be followed by one or more paragraphs
