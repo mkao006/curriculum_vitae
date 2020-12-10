@@ -112,7 +112,7 @@
 %         {address}
 %         {phone number}
 %         {email}
-\newcommand\personal[2][]{%
+\newcommand\personal[3][]{%
     \newcommand\SYMBOL[1]{\raisebox{-2pt}{\Large\ding{##1}}}%
     \needspace{0.5\textheight}%
     \newdimen\boxwidth%
@@ -121,8 +121,9 @@
       \begin{tabularx}{\boxwidth}{c|X}
         \centering
         %% \SYMBOL{45} & {#2}\smallskip\\
-        \faGithub & \href{http://#1}{#1}\smallskip\\
-        \faEnvelope & \href{mailto:#2}{#2}
+        \faGithub & \href{https://github.com/#1}{#1}\smallskip\\
+        \faEnvelope & \href{mailto:#2}{#2}\smallskip \\
+        \faLinkedinSquare & \href{https://linkedin.com/in/#3}{#3}
     \end{tabularx}}}
 
 % Every \item can be followed by one or more paragraphs
